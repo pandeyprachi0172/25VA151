@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(244, 248, 248);
+    background-image:url('images.jpg');
+    background-position:top left;
+    background-repeat :repeat-x;
+}
+p{font-family:arial;
+    font-size: 30px;
+    color:rgb(185, 14, 17);
+    font-weight:700;
+    font-style: italic;
+    text-align:centre;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow:1px  1px 10px ;
+    text-wrap:initial;
+}
+#para{
+    color:aliceblue;
+    display:inline-block;
+}
+img{
+    float:left;
+
+}
