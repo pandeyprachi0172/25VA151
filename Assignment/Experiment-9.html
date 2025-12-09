@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Product Grid</title>
+  <style>
+     { margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }  body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }  .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }    .product-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }   .product-card:hover {
+      transform: translateY(-5px);
+    }  .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }    .product-info {
+      padding: 15px;
+    }    .product-info h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }   .product-info p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }  .product-info .price {
+      font-weight: bold;
+      color: #2c3e50; }
+    @media (max-width: 768px) {
+      .product-card img {
+        height: 150px;  }
+      .product-info h3 {
+        font-size: 16px;}
+    }  @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+      .product-card img {
+        height: 120px;
+      }
+      .product-info h3 {
+        font-size: 14px;
+      }
+      .product-info p {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Responsive Product Grid</h1>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200" alt="Product 1">
+      <div class="product-info">
+        <h3>Product 1</h3>
+        <p>Short description of product 1.</p>
+        <span class="price">Rs2999</span>
+      </div>
+    </div>
+<div class="product-card">
+      <img src="https://via.placeholder.com/300x200" alt="Product 2">
+      <div class="product-info">
+        <h3>Product 2</h3>
+        <p>Short description of product 2.</p>
+        <span class="price">Rs3999</span>
+      </div>
+    </div>
+ <div class="product-card">
+      <img src="https://via.placeholder.com/300x200" alt="Product 3">
+      <div class="product-info">
+        <h3>Product 3</h3>
+        <p>Short description of product 3.</p>
+        <span class="price">Rs4999</span>
+      </div>
+    </div>
+ <div class="product-card">
+      <img src="https://via.placeholder.com/300x200" alt="Product 4">
+      <div class="product-info">
+        <h3>Product 4</h3>
+        <p>Short description of product 4.</p>
+        <span class="price">rs5999</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
